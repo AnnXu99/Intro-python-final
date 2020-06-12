@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import math
 import csv
 
 x_all = []
@@ -19,7 +18,7 @@ for row in x_reader:
         x_all.append(float(field))
         if (count < 251):
             x.append(float(field))
-            count +=1
+            count += 1
 
 y_reader = csv.reader(data_y)
 count = 0;
@@ -39,5 +38,5 @@ for i in range(250):
 
 plt.plot(x_all, y_all)
 plt.fill_between(x, y)
-plt.text(0.25, -0.25, "area is " + str(area))
+plt.text(0.25, -0.25, "area = " + str(area))
 plt.show()
