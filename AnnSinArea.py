@@ -37,6 +37,6 @@ for i in range(250):
     area += y[i]*delta
 
 plt.plot(x_all, y_all)
-plt.fill_between(x, y)
-plt.text(0.25, -0.25, "area = " + str(area))
+plt.fill_between(x, y, color='black')
+plt.text(0, -0.25, "area = " + str(area))
 plt.show()
